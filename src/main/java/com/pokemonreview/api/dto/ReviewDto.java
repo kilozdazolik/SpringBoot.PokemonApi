@@ -6,11 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class PokemonDto {
+@AllArgsConstructor
+@Builder
+public class ReviewDto {
     private int id;
-    private String name;
-    private String type;
+    private String title;
+    private String content;
+    private int stars;
 }
